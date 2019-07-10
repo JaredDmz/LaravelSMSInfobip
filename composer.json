@@ -35,6 +35,4 @@
       "SMSI": "JaredDmz\\LaravelSMSInfobip\\SMSIFacade"
     }
   }
-},
-  "minimum-stability": "dev"
 }
