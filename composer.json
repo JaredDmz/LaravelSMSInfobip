@@ -15,8 +15,7 @@
     }
   ],
   "require": {
-    "php": ">=7",
-    "illuminate/support": "5.x"
+    "php": ">=7"
   },
   "autoload": {
     "psr-4": {
