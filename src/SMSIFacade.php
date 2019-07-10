@@ -6,9 +6,9 @@ class SMSIFacade
 {
     public static function enviar($telefono,$mensaje){
     	if (strlen($telefono) == 12 && $mensaje != '') {
-          $username = env('SMS_USERNAME',false);
-          $password = env('SMS_PASSWORD',false);
-	        if($username != false && $password != false) {
+          $username = env('SMS_USERNAME','false');
+          $password = env('SMS_PASSWORD','false');
+	        if($username != 'false' && $password != 'false') {
                 $curl = curl_init();
                 curl_setopt_array($curl, array(
                   CURLOPT_URL => "https://nn6x8.api.infobip.com/sms/2/text/single",
@@ -26,7 +26,7 @@ class SMSIFacade
                 $err = curl_error($curl);
                 curl_close($curl);
 
-                return ['estatus'=>'si','mensaje'=>'SMS enviado.'];
+                return ['estatus'=>'si','mensaje'=>'SMS enviado.','detalles'=>$response];
             }else{
                 return ['estatus'=>'no','mensaje'=>'Agrega tus variables de sesión en el archivo .env de la aplicación.'];
             }
