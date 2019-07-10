@@ -3,16 +3,16 @@ Configurar y utilizar de forma sencilla el envío de SMS´s a través de [Infobi
 
 Solicite este paquete en su composer.json y actualice el compositor o simplemente copia y pega lo siguiente:
 
-    composer require JaredDmz/LaravelSMSInfobip
+    composer require jareddmz/laravel-infobip-sms
 
 ## Installation
 Después de actualizar el editor, agregue el Proveedor de servicios a la matriz de proveedores en config/app.php
 
-    JaredDmz/LaravelSMSInfobip\SMSIProvider::class,
+    jareddmz/laravel-infobip-sms\SMSIProvider::class,
     
 Opcionalmente puedes usar la fachada para un código más corto. Añade esto a tus fachadas:
 
-    'SMSI' => JaredDmz/LaravelSMSInfobip\SMSIFacade::class,
+    'SMSI' => jareddmz/laravel-infobip-sms\SMSIFacade::class,
     
  ## Uso
 __1. Crea 2 nuevas variables globales al final del archivo .env__:
