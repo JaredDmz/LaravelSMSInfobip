@@ -1,5 +1,5 @@
 {
-  "name": "JaredDmz/LaravelSMSInfobip",
+  "name": "jareddmz/laravel-infobip-sms",
   "description": "Configurar y utilizar de forma sencilla el envío de SMS´s a través de Infobip.",
   "license": "MIT",
   "keywords": [
@@ -20,16 +20,16 @@
   },
   "autoload": {
     "psr-4": {
-      "JaredDmz\\LaravelSMSInfobip\\": "src"
+      "jareddmz\\laravel-infobip-sms\\": "src"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "JaredDmz\\LaravelSMSInfobip\\SMSIProvider"
+        "jareddmz\\laravel-infobip-sms\\SMSIProvider"
       ],
       "aliases": {
-        "SMSI": "JaredDmz\\LaravelSMSInfobip\\SMSIFacade"
+        "SMSI": "jareddmz\\laravel-infobip-sms\\SMSIFacade"
       }
     }
   },
