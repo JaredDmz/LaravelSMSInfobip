@@ -1,6 +1,6 @@
 <?php
 
-namespace /jareddmz/laravel-infobip-sms;
+namespace jareddmz\laravel-infobip-sms;
 
 class SMSI
 {
