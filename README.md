@@ -3,7 +3,7 @@ Configurar y utilizar de forma sencilla el envío de SMS´s a través de [Infobi
 
 Solicite este paquete en su composer.json y actualice el compositor o simplemente copia y pega lo siguiente:
 
-    composer require jareddmz/laravel-infobip-sms
+    composer require jareddmz/laravel-infobip-sms:dev-master
 
 ## Installation
 Después de actualizar el editor, agregue el Proveedor de servicios a la matriz de proveedores en config/app.php
