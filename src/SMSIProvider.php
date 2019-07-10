@@ -4,7 +4,7 @@ namespace JaredDmz\LaravelInfobipSMS;
 
 use Illuminate\Support\ServiceProvider;
 
-class SMSProvider extends ServiceProvider
+class SMSIProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
