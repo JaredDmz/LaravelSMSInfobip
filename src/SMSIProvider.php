@@ -23,6 +23,6 @@ class SMSIProvider extends ServiceProvider
      */
     public function register()
     {
-        require_once getcwd().'jareddmz/laravel-infobip-sms/src/SMSIFacade.php';
+        require_once getcwd().'/SMSIFacade.php';
     }
 }
