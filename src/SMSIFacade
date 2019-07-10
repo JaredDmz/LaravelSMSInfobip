@@ -2,7 +2,7 @@
 
 namespace JaredDmz\LaravelInfobipSMS;
 
-class SMSI
+class SMSIFacade
 {
     public static function enviar($telefono,$mensaje){
     	if (strlen($telefono) == 10 && $mensaje != '') {
