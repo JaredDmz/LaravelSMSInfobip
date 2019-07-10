@@ -8,11 +8,11 @@ Solicite este paquete en su composer.json y actualice el compositor o simplement
 ## Installation
 Después de actualizar el editor, agregue el Proveedor de servicios a la matriz de proveedores en config/app.php
 
-    jareddmz/laravel-infobip-sms\SMSIProvider::class,
+    JaredDmz\LaravelInfobipSMS\SMSIProvider::class,
     
 Opcionalmente puedes usar la fachada para un código más corto. Añade esto a tus fachadas:
 
-    'SMSI' => jareddmz/laravel-infobip-sms\SMSIFacade::class,
+    'SMSI' => JaredDmz\LaravelInfobipSMS\SMSIFacade::class,
     
  ## Uso
 __1. Crea 2 nuevas variables globales al final del archivo .env__:
