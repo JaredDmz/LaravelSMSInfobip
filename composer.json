@@ -19,16 +19,16 @@
   },
   "autoload": {
     "psr-4": {
-      "jareddmz\\laravel-infobip-sms\\": "src"
+      "JaredDmz\\LaravelInfobipSMS\\": "src"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "jareddmz\\laravel-infobip-sms\\SMSIProvider"
+        "JaredDmz\\LaravelInfobipSMS\\SMSIProvider"
       ],
       "aliases": {
-        "SMSI": "jareddmz\\laravel-infobip-sms\\SMSIFacade"
+        "SMSI": "JaredDmz\\LaravelInfobipSMS\\SMSIFacade"
       }
     }
   },
