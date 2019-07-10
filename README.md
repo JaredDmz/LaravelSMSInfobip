@@ -27,7 +27,7 @@ __2. Ejecuta los 3 siguientes comandos para borrar el cache de la aplicación y 
     php artisan cache:clear
     composer dump-autoload
 
-__3. Llama la fachada en tu archivo PHP (Controlador) y envía 2 parámetros de tipo String, número de teléfono (12 dígitos) y el mensaje.
+__3. Llama la fachada en tu archivo PHP (Controlador) y envía 2 parámetros de tipo String, número de teléfono (12 dígitos) y el mensaje__:
 
       use SMSI;
       
