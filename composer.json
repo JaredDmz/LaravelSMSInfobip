@@ -1,0 +1,40 @@
+{
+  name: "JaredDmz/LaravelSMSInfobip",
+  description: "Configurar y utilizar de forma sencilla el envío de SMS´s a través de Infobip.",
+  license: "MIT",
+  keywords: [
+    "laravel",
+    "sms",
+    "infobip",
+    "mensajes"
+  ],
+  authors: [
+    {
+      name: "Jared Dmz",
+      email: "jrd22dmz@hotmail.com"
+    }
+  ],
+  require: {
+    php: ">=5",
+    illuminate/support: "5.x"
+  },
+  autoload: {
+    psr-4: {
+      JaredDmz\LaravelSMSInfobip\: "src"
+    }
+  },
+  extra: {
+    branch-alias: {
+      dev-master: "0.1-dev"
+    },
+    laravel: {
+      providers: [
+        "JaredDmz/LaravelSMSInfobip\SMSIProvider"
+      ],
+    aliases: {
+      PDF: "JaredDmz/LaravelSMSInfobip\SMSIFacade"
+    }
+  }
+},
+  minimum-stability: "dev"
+}
