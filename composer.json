@@ -31,8 +31,10 @@
       "providers": [
         "JaredDmz\\LaravelSMSInfobip\\SMSIProvider"
       ],
-    "aliases": {
-      "SMSI": "JaredDmz\\LaravelSMSInfobip\\SMSIFacade"
+      "aliases": {
+        "SMSI": "JaredDmz\\LaravelSMSInfobip\\SMSIFacade"
+      }
     }
-  }
+  },
+  "minimum-stability":"dev",
 }
