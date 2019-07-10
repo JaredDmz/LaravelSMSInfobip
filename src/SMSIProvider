@@ -1,6 +1,6 @@
 <?php
 
-namespace jareddmz\laravel-infobip-sms;
+namespace JaredDmz\LaravelInfobipSMS;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -23,6 +23,6 @@ class SMSProvider extends ServiceProvider
      */
     public function register()
     {
-        require_once app_path().'/Helpers/SMS.php';
+        require_once getcwd().'jareddmz/laravel-infobip-sms/src/SMSIFacade.php';
     }
 }
