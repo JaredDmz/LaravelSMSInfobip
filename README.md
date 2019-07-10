@@ -5,7 +5,7 @@ Solicite este paquete en su composer.json y actualice el compositor o simplement
 
     composer require jareddmz/laravel-infobip-sms:dev-master
 
-## Installation
+## Instalación
 Después de actualizar el editor, agregue el Proveedor de servicios a la matriz de proveedores en config/app.php
 
     JaredDmz\LaravelInfobipSMS\SMSIProvider::class,
@@ -18,16 +18,22 @@ Opcionalmente puedes usar la fachada para un código más corto. Añade esto a t
 __1. Crea 2 nuevas variables globales al final del archivo .env__:
 Aquí agregarás tus datos de sesión al portal Infobip para loguearte con la API:
 
-      SMS_USERNAME=''
-      SMS_PASSWORD=''
+    SMS_USERNAME=''
+    SMS_PASSWORD=''
+      
+__2. Ejecuta los 3 siguientes comandos para borrar el cache de la aplicación y permitir que carguen las variables globales__:
 
-Simplemente llama la fachada en tu archivo PHP y envía 2 parámetros de tipo String, número de teléfono y el mensaje.
+    php artisan config:clear
+    php artisan cache:clear
+    composer dump-autoload
+
+__3. Llama la fachada en tu archivo PHP (Controlador) y envía 2 parámetros de tipo String, número de teléfono (12 dígitos) y el mensaje.
 
       use SMSI;
       
       ...
       
-      SMSI::enviar('+520000000000','Hola, gusto en saludarte.');
+      SMSI::enviar('520000000000','Hola, gusto en saludarte.');
       
 ## Respuestas
 Para facilitar el uso de este Wrapper y asegurar que el SMS fue enviado, el llamado del mismo te devolverá una respuesta de tipo array de la siguiente forma en caso de ser positivo:
