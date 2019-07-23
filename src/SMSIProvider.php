@@ -23,6 +23,6 @@ class SMSIProvider extends ServiceProvider
      */
     public function register()
     {
-        require_once __DIR__.'\SMSIFacade.php';
+        require_once __DIR__.'/SMSIFacade.php';
     }
 }
